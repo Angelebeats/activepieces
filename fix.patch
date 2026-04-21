@@ -1,0 +1,13 @@
+diff --git a/packages/pieces/community/instantly-ai/src/lib/actions/update-campaign.ts b/packages/pieces/community/instantly-ai/src/lib/actions/update-campaign.ts
+index d067645..6236b28 100644
+--- a/packages/pieces/community/instantly-ai/src/lib/actions/update-campaign.ts
++++ b/packages/pieces/community/instantly-ai/src/lib/actions/update-campaign.ts
+@@ -58,7 +58,7 @@ export const updateCampaignAction = createAction({
+ 
+     const body: Record<string, unknown> = {};
+     for (const [key, value] of Object.entries(fields)) {
+-      if (value !== undefined && value !== null) {
++      if (value !== undefined && value !== null && value !== '') {
+         body[key] = value;
+       }
+     }
