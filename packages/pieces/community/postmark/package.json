@@ -1,0 +1,9 @@
+{
+  "name": "@activepieces/piece-postmark",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@activepieces/pieces-framework": "^0.20.0",
+    "@activepieces/pieces-common": "^0.20.0"
+  }
+}
